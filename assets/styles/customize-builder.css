@@ -1,0 +1,258 @@
+.select2-drop-active {
+    z-index: 999999;
+}
+.accordion-section.control-section-builder_widget_switcher {
+    margin: 15px 12px;
+    overflow: hidden;
+}
+#customize-theme-controls .add-new-builder-widget {
+    cursor: pointer;
+    float: right;
+    margin-left: 10px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+#customize-theme-controls .add-new-builder-widget:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.add-new-builder-widget:before {
+    content: "\f132";
+    display: inline-block;
+    position: relative;
+    left: -2px;
+    top: -1px;
+    font: normal 20px/1 'dashicons';
+    vertical-align: middle;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.add-new-builder-widget.active:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.add-new-builder-widget.active,
+.add-new-builder-widget.active:hover {
+    background: #eee;
+    border-color: #999;
+    color: #32373c;
+    -webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,0.5);
+}
+.available-builder-widgets {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -301px;
+    visibility: hidden;
+    overflow: auto;
+    width: 300px;
+    margin: 0;
+    z-index: 1;
+    background: #eee !important;
+    -webkit-transition: left .18s;
+    transition: left .18s;
+    border-right: 1px solid #ddd;
+    list-style: none;
+}
+.available-builder-widgets.active {
+    left: 0;
+    visibility: visible;
+}
+body.adding-builder-widget #customize-preview {
+    opacity: 0.4;
+}
+body.adding-builder-widget .wp-full-overlay-main {
+    left: 300px;
+}
+.available-builder-widgets li {
+    margin: 0
+}
+.available-builder-widgets li button {
+    background: #fff;
+    border: 0 none;
+    border-bottom: 1px solid #e4e4e4;
+    color: #23282d;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 20px 15px 20px 60px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.available-builder-widgets li button:hover,
+.available-builder-widgets li button:active {
+    background: #eee;
+    border-bottom-color: #ccc;
+}
+
+.available-builder-widgets li button:before {
+    content: '\f132';
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    color: #32373c;
+    font: normal 20px/1 'dashicons';
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* smiley */
+.available-builder-widgets [class*="easy"] button:before { content: "\f328"; top: 16px; }
+
+/* star-filled */
+.available-builder-widgets [class*="super"] button:before,
+.available-builder-widgets [class*="like"] button:before { content: "\f155"; top: 16px; }
+
+/* wordpress */
+.available-builder-widgets [class*="meta"] button:before { content: "\f120"; }
+
+/* archive-box */
+.available-builder-widgets [class*="archives"] button:before { content: "\f480"; top: 16px; }
+
+/* category */
+.available-builder-widgets [class*="categor"] button:before { content: "\f318"; top: 16px; }
+
+/* comments */
+.available-builder-widgets [class*="comment"] button:before,
+.available-builder-widgets [class*="testimonial"] button:before,
+.available-builder-widgets [class*="chat"] button:before { content: "\f101"; }
+
+/* post */
+.available-builder-widgets [class*="post"] button:before { content: "\f109"; }
+
+/* admin-page */
+.available-builder-widgets [class*="page"] button:before { content: "\f105"; }
+
+/* text */
+.available-builder-widgets [class*="text"] button:before { content: "\f478"; }
+
+/* links */
+.available-builder-widgets [class*="link"] button:before { content: "\f103"; }
+
+/* search */
+.available-builder-widgets [class*="search"] button:before { content: "\f179"; }
+
+/* menu */
+.available-builder-widgets [class*="menu"] button:before,
+.available-builder-widgets [class*="nav"] button:before { content: "\f333"; }
+
+/* tag-cloud */
+.available-builder-widgets [class*="tag"] button:before { content: "\f479"; }
+
+/* rss */
+.available-builder-widgets [class*="rss"] button:before { content: "\f303"; top: 14px; }
+
+/* calendar */
+.available-builder-widgets [class*="event"] button:before,
+.available-builder-widgets [class*="calendar"] button:before { content: "\f145"; top: 16px;}
+
+/* format-image */
+.available-builder-widgets [class*="image"] button:before,
+.available-builder-widgets [class*="photo"] button:before,
+.available-builder-widgets [class*="slide"] button:before,
+.available-builder-widgets [class*="instagram"] button:before { content: "\f128"; }
+
+/* format-gallery */
+.available-builder-widgets [class*="album"] button:before,
+.available-builder-widgets [class*="galler"] button:before { content: "\f161"; }
+
+/* format-video */
+.available-builder-widgets [class*="video"] button:before,
+.available-builder-widgets [class*="tube"] button:before { content: "\f126"; }
+
+/* format-audio */
+.available-builder-widgets [class*="music"] button:before,
+.available-builder-widgets [class*="radio"] button:before,
+.available-builder-widgets [class*="audio"] button:before { content: "\f127"; }
+
+/* admin-users */
+.available-builder-widgets [class*="login"] button:before,
+.available-builder-widgets [class*="user"] button:before,
+.available-builder-widgets [class*="member"] button:before,
+.available-builder-widgets [class*="avatar"] button:before,
+.available-builder-widgets [class*="subscriber"] button:before,
+.available-builder-widgets [class*="profile"] button:before,
+.available-builder-widgets [class*="grofile"] button:before { content: "\f110"; }
+
+/* cart */
+.available-builder-widgets [class*="commerce"] button:before,
+.available-builder-widgets [class*="shop"] button:before,
+.available-builder-widgets [class*="cart"] button:before { content: "\f174"; top: 16px; }
+
+/* shield */
+.available-builder-widgets [class*="secur"] button:before,
+.available-builder-widgets [class*="firewall"] button:before { content: "\f332"; }
+
+/* chart-bar */
+.available-builder-widgets [class*="analytic"] button:before,
+.available-builder-widgets [class*="stat"] button:before,
+.available-builder-widgets [class*="poll"] button:before { content: "\f185"; }
+
+/* feedback */
+.available-builder-widgets [class*="form"] button:before { content: "\f175"; }
+
+/* email-alt */
+.available-builder-widgets [class*="subscribe"] button:before,
+.available-builder-widgets [class*="news"] button:before,
+.available-builder-widgets [class*="contact"] button:before,
+.available-builder-widgets [class*="mail"] button:before { content: "\f466"; }
+
+/* share */
+.available-builder-widgets [class*="share"] button:before,
+.available-builder-widgets [class*="socia"] button:before { content: "\f237"; }
+
+/* translation */
+.available-builder-widgets [class*="lang"] button:before,
+.available-builder-widgets [class*="translat"] button:before { content: "\f326"; }
+
+/* location-alt */
+.available-builder-widgets [class*="locat"] button:before,
+.available-builder-widgets [class*="map"] button:before { content: "\f231"; }
+
+/* download */
+.available-builder-widgets [class*="download"] button:before { content: "\f316"; }
+
+/* cloud */
+.available-builder-widgets [class*="weather"] button:before { content: "\f176"; top: 16px; }
+
+/* facebook */
+.available-builder-widgets [class*="facebook"] button:before { content: "\f304"; }
+
+/* twitter */
+.available-builder-widgets [class*="tweet"] button:before,
+.available-builder-widgets [class*="twitter"] button:before { content: "\f301"; }
